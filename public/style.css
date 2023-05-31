@@ -1,0 +1,261 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+}
+#boy{
+    text-align: center; 
+    /* margin-top:30px;  */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100%; 
+    row-gap:50px; 
+    column-gap:20px; 
+    /* margin-bottom: 100px; */
+    width: 90%;
+    margin:  80px auto;
+}
+#boy h5{
+    font-size: 26px;
+    font-weight: 700;
+}
+#boy> div{
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.navbar-brand
+{
+    
+    color: #EA8F1C;
+}
+.toggle{
+    display: none;
+}
+
+.detailsCOntent:after
+{
+
+    content: "cancel";
+}
+.cancelToggle{
+    background-color: red;
+}
+.blur{
+    background-color: #ea8d1c85;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+}
+
+.modals{
+    
+    position: fixed;
+    background-color: rgb(216, 216, 216);
+    z-index: 99;
+    top: 80px;
+    right: 0;
+    left: 0;
+    width: 80%;
+    margin: auto;
+    padding: 60px 80px;
+    box-shadow: 15px 15px 12px rgba(107, 107, 107, 0.61);
+}
+
+.actionButtonDiv
+{
+    position: relative;
+    bottom: 40%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.actionButtonDiv button{
+    border: none;
+    background-color: #EA8F1C;
+    color: #f4f4f4;
+    padding: 6px 15px;
+}
+
+
+.mainDiv{
+    width: 90%;
+    margin: 20px auto;
+    
+    
+}
+.mainDiv ul li{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin: 26px;
+    padding: 10px 200px 12px 20px;
+    box-shadow: rgba(0, 0, 0, 0.137) 0px 10px 16px, rgba(0, 0, 0, 0.11) 0px 10px 10px;
+    background-color: #f0eeee;
+}
+.mainDiv img{
+    width: 180px;
+}
+
+.mainDiv .productQty{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.mainDiv .name{
+    font-weight: 700;
+    color: #EA8F1C;
+    letter-spacing: 0.8px;
+}
+.mainDiv p{
+    font-size: 12px;
+    word-spacing: 3px;
+    line-height: 15px;
+    color: rgb(139, 139, 139);
+}
+.mainDiv .btnaction
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+}
+.mainDiv .btnaction button{
+    border: none;
+    color: #f4f4f4;
+    background-color: #EA8F1C;
+    padding: 0 20px;
+    font-size: 10px;
+    transition: 0.3s ease;
+    /* border-radius: ; */
+}
+.mainDiv .btnaction button:hover
+{
+    background-color: black;
+    color: #f4f4f4;
+    border: 1;
+}
+.btnDel{
+    border: none;
+    background-color: black;
+    color: #f4f4f4;
+    padding: 4px 12px;
+    transition: 0.2s ease;
+}
+.btnDel:hover{
+    background-color: rgb(255, 56, 56);
+}
+
+.noProd{
+    text-align: center;
+    color: #EA8F1C;
+    margin: 50px 0;
+    font-size: 4rem;
+}
+
+.admin-form
+{
+    width: 70%;
+    margin: auto;
+    
+}
+.admin-form div{
+    margin: 12px 0;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.admin-form div input{
+    font-size: 16px;
+    padding: 6px;
+}
+.admin-form div label{
+    font-size: 20px;
+}
+.admin-form input[type= 'submit']
+{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    color: #f4f4f4;
+    background-color: #EA8F1C;
+    transition: 0.3s ease;
+}
+.admin-form input[type= 'submit']:hover
+{
+    background-color: black;
+    cursor: pointer;
+}
+.admin-form input[type= 'file']
+{
+    cursor: pointer;
+}
+#ViewData
+{
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(54, 54, 54);
+    color: #f4f4f4;
+}
+#ViewData:hover{
+    background-color: black;
+}
+.btnEdit{
+    margin-top: 6px;
+    border: none;
+    background-color: #EA8F1C;
+    color: #f4f4f4;
+    padding: 4px 12px;
+    transition: 0.2s ease;
+}
+.btnEdit:hover{
+    background-color: green;
+}
+
+#overlayAdmin{
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    right: 28%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+/* screen 920px */
+
+@media screen and (max-width: 760px) {
+        .actionButtonDiv
+        {
+            position: unset;
+        }
+        
+        #boy{
+            text-align: center; 
+            
+            display: block; 
+            /* grid-template-columns: repeat(2, 1fr);  */
+            width: 100%; 
+            row-gap:50px; 
+            column-gap:20px; 
+            width: 90%;
+            margin: auto;
+            /* margin-bottom: 100px; */
+        }
+        
+        #boy> div{
+            margin-bottom: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        #boy button{
+            margin-bottom: 10px;
+        }
+    }

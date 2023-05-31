@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.pngmart.com/files/6/Rocket-PNG-File.png">
+    <title>travel HUB</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top ">
+
+      <!-- <% if(page==0){ %>
+        <a class="navbar-brand " href="/" >Home</a>
+        <% } %> -->
+        <a class="navbar-brand " href="/" style="font-weight: 800; color: #fff;">Travel <span style="background-color: #EA8F1C; color: black; padding: 10px;">hub </span></a>
+        <% if(page==1){ %>
+          <a class="navbar-brand " href="#" >Login as user</a>
+          <% } %>
+          <% if(page==3){ %>
+            <a class="navbar-brand " href="#" >Signup as user</a>
+            <% } %>
+            
+            <% if(page==5){ %>
+              <a class="navbar-brand " href="#" ><%= name %></a>
+              
+              <% } %>
+              
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <% if(page==5){ %>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">logout</a>
+              </li>
+              
+              <% } else{ %>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/login">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">signup</a>
+            </li>
+            <% } %>
+            <% if(page ==5){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/getCart" style="text-align: left; margin-right: 40px; ">Cart</a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+        <!-- <ul class="navbar-nav" style="background-color: #EA8F1C;">
+          
+        </ul> -->
+      </nav>
+<br>

@@ -1,0 +1,1 @@
+[{"email":"admin@admin.com","password":"123","key":16852985133,"varified":true,"role":"admin"},{"email":"cadakaw465@onlcool.com","password":"123","key":1685525669634,"prodycts":[{"prodId":"1","qty":2}],"varified":true,"role":"user"}]

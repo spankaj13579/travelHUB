@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset</title>
+</head>
+<body style="text-align: center; background-color: black; padding-top: 40px;">
+    <h2 style="color: #EA8F1C;">Reset Password</h2>
+    <form  method="post">
+        <input type="password" name="newPassword" id="newPassword" placeholder="New Password"><br><br>
+        <input type="submit" value="submit" style="background-color: #EA8F1C; border: none; padding: 8px 25px; color: #f4f4f4;">
+    </form>
+    <% if(err === 1){ %>
+        <h6 style="background-color: rgb(160, 37, 0); color: #f4f4f4; font-size: 18px;">Invalid details</h6>
+    <% } %>
+    <% if(err === 2){ %>
+        <h6 style="background-color: orange; color: #f4f4f4;  font-size: 18px;">Warning!! Empty space not allowed</h6>
+    <% } %>
+</body>
+</html>

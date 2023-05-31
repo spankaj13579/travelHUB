@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Admin</h2>
+    <form action="/addAdmin" id="form" method="post" enctype="multipart/form-data" class="admin-form">
+        <div>
+
+            <label for="">Product Name</label>
+            <input type="text" name="name" id="" placeholder="Item Name" required>
+        </div>
+        <div>
+            <label for="">Product Discription</label>
+            <input type="text" name="disc" id="" placeholder="Item Discription" required>
+        </div>
+        <div>
+            <label for="">Total Supply</label>
+            <input type="number" name='left' placeholder="Total number of items" required min="1">
+        </div>
+        <div>
+            <label for="">Product Price in ₹</label>
+            <input type="number" name="price" id=""  placeholder="Item Price" required required min="1">
+        </div>
+        <div>
+            <label for="">Product Image</label>
+            <input type="file" name="img" id="" accept="image/png, image/gif, image/jpeg">
+        </div>
+        <input type="submit" value="submit">
+        <a href="/viewDataAdmin" id="ViewData">view Data</a>
+    </form>
+    <a style="padding:6px 10px; background-color: red; color:#f4f4f4; text-decoration: none; position: fixed; top: 8px; left: 8px;" href="/logout">logout</a>
+
+    <!-- <script src="../../admin.js"></script> -->
+</body>
+</html>
